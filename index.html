@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We are with you</title>
+
+   
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <!-- header section starts  -->
+
+    <header>
+        <!-- for menu button  when screen size becomes smaller -->
+        <div id="menu-bar" class="fas fa-bars"></div>  
+
+        <!-- for nav bar -->
+        <nav class="navbar">
+            <a href="#home">home </a>
+            <a href="#services">services</a>
+            <a href="#category">Destinations</a>
+            <a href="#aboutus">About Us</a>
+        </nav>
+        <!-- for admin button -->
+        <div class="icons">
+            <i><a href="http://localhost/tour and travel website/userCheck.php"><b class="logo" id="bookhistory-btn"><t>MY BOOK HISTORY</t></b></a></i>
+            <i><b class="logo" id="login-btn"><t>ADMIN</t></b></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <!-- for search bar which is hidden until search button is click -->
+        <form action="http://localhost/tour and travel website/categories/fetch.php" class="search-bar-container" method="POST">
+            <input type="search" name ="Destination"  id="search-bar"  placeholder="search here..."><br>
+            <label for="search-bar" class="fas fa-search"></label>
+            <input type="submit" name="qsearch" value="search">
+        </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- login form container  which is hidden until we click admin button-->
+
+    <div class="login-form-container">
+        <!-- for "x" logo to close form -->
+        <i class="fas fa-times" id="form-close"></i>
+        
+        <form action="http://localhost/tour and travel website/employeeCheck.php" method="POST">
+            <h3>Hlo admin</h3>
+            <input type="email" name="Email" class="box" placeholder="enter your email">
+            <input type="password" name="pass" class="box" placeholder="enter your password">
+            <input type="submit" name="submit" value="login now" class="btn">
+        
+        </form>
+
+    </div>
+    <div class="bookhistory">
+        <!-- for "x" logo to close form -->
+        <i class="fas fa-times" id="form-close1"></i>
+        
+
+
+    </div>
+    <!-- for background video -->
+    <div class="back-vid">
+        <video src="images/vid-1st.mp4" id="video-slider" loop autoplay muted></video>
+            
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>TRIP TO NEPAL</h3>
+            <p>Search your destination</p>
+            <div class="icons" >
+                <i class="fas fa-search"  id="search-btn"></i>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <!-- for section partitioning line -->
+    <div style="width:100%;height:2px;background-color:antiquewhite;"></div>
+
+    <!-- services section starts  -->
+
+    <section class="services" id="services">
+
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container" style="text-align:center">
+
+            <div class="box">
+                <!-- for globe logo  -->
+                <i class="fas fa-globe-asia"></i>
+                <h3>around the world</h3>
+                <p> <h4>from wherever you are ,you'll get to know about beutiful destinations of nepal</h4></p>
+            </div>
+
+            <div class="box" >
+                <!-- for logo of plane -->
+                <i class="fas fa-plane"></i>
+                <h3>Travel agencies </h3>
+                <p><h4>We provide you the list of travelagencies</h4> </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- services section ends -->
+
+    <!-- for section partitioning line -->
+    <div style="width:100%;height:2px;background-color:antiquewhite;"></div>
+    <!-- category section starts  -->
+
+    <section class="category" id="category">
+
+        <h1 class="heading">
+            <span>D</span>
+            <span>E</span>
+            <span>S</span>
+            <span>T</span>
+            <span>I</span>
+            <span>N</span>
+            <span>A</span>
+            <span>T</span>
+            <span>I</span>
+            <span>O</span>
+            <span>N</span>
+            <span>S</span>
+        </h1>
+        <form action="http://localhost/tour and travel website/categories/fetch.php" method="post">
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/categoryReligious.jpg" alt="image donot found" >
+                <div class="content">
+                    <h3>RELIGIOUS</h3>
+                    <p>click on the link to explore places</p>
+                    <button type="submit" name="RELIGIOUS" class="btn" formaction="http://localhost/tour and travel website/categories/fetch.php">EXPLORE</button>
+                </div>
+            </div>
+        
+            <div class="box">
+                <img src="images/categoryClimbing.jpg" alt="">
+                <div class="content">
+                    <h3>CLIMBING</h3>
+                    <p>click on the link to explore places</p>
+                    <button type="submit" name="CLIMBING" class="btn" formaction="http://localhost/tour and travel website/categories/fetch.php">EXPLORE</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/categoryTrekking.jpg" alt="">
+                <div class="content">
+                    <h3>TREKKING</h3>
+                    <p>click on the link to explore places</p>
+                    <button type="submit" name="TREKKING" class="btn" formaction="http://localhost/tour and travel website/categories/fetch.php">EXPLORE</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/categoryAdventures.jpg" alt="">
+                <div class="content">
+                    <h3>ADVENTURE</h3>
+                    <p>click on the link to explore places</p>
+                    <button type="submit" name="ADVENTURE" class="btn" formaction="http://localhost/tour and travel website/categories/fetch.php">EXPLORE</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/categoryCamping.jpg" alt="">
+                <div class="content">
+                    <h3>CAMPING</h3>
+                    <p>click on the link to explore places</p>
+                    <button type="submit" name="CAMPING" class="btn" formaction="http://localhost/tour and travel website/categories/fetch.php">EXPLORE</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/categoryLakes.jpg" alt="">
+                <div class="content">
+                    <h3>LAKES</h3>
+                    <p>click on the link to explore places</p>
+                    <button type="submit" name="LAKES" class="btn" formaction="http://localhost/tour and travel website/categories/fetch.php">EXPLORE</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/categoryWildlife.jpg" alt="">
+                <div class="content">
+                    <h3>WILDLIFE</h3>
+                    <p>click on the link to explore places</p>
+                    <button type="submit" name="WILDLIFE" class="btn" formaction="http://localhost/tour and travel website/categories/fetch.php">EXPLORE</button>
+                </div>
+            </div>
+            
+
+        </div>
+
+    </form>
+    </section>
+
+    <div style="width:100%;height:2px;background-color:antiquewhite;"></div>
+
+    <!-- footer section  -->
+
+    <section class="footer" id="aboutus">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                <p><i>Just a random website suggesting you destinations and travel agents</i></p>
+            </div>
+            
+            <div class="box">
+                <h3>quick links</h3>
+                <i>
+                <a href="#">home</a>
+                <a href="#services">services</a>
+                <a href="#category">Destinations</a>
+               
+            </div>
+            <div class="box" >
+                <h3>follow us</h3>
+            
+            <a href="https://www.facebook.com/groups/2770169659701469">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+                <a href="https://www.linkedin.com/in/sailent-killerr-b4701023b/">linkedin</a>
+            
+            </div>
+
+        </div>
+
+        <h1 class="credit"> @<span> US</span> | all rights reserved! 2022 </h1>
+
+    </section> 
+    </div>
+
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+
+</body> 
+</html>
