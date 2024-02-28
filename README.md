@@ -1,7 +1,5 @@
 
-Certainly! Here's a polished version of your project description for your CV:
-
-Trip To Nepal Travel Website Development
+##Trip To Nepal Travel Website
 
 As part of a comprehensive project, I spearheaded the development of a dynamic and responsive travel website named "Trip To Nepal." This platform was designed to cater to the diverse needs of travel enthusiasts seeking to explore the rich landscapes and cultural heritage of Nepal. The website boasted an array of features aimed at enhancing user experience and facilitating seamless travel planning and booking processes.
 
